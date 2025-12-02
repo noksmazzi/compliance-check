@@ -5,11 +5,15 @@ document.getElementById("complianceForm").addEventListener("submit", function(e)
     let score = 0;
     let total = 9;
 
-    form.forEach((value) => {
-        if(value === "yes") score++;
+    let businessName = form.get("businessName");
+
+    form.forEach((value, key) => {
+        if(key !== "businessName" && value === "yes") {
+            score++;
+        }
     });
 
     let percentage = Math.round((score / total) * 100);
 
-    window.location.href = "result.html?score=" + percentage;
+    window.location.href = "result.html?score=" + percentage + "&business=" + encodeURIComponent(businessName);
 });
