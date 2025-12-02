@@ -14,11 +14,19 @@
 
         <form id="complianceForm">
 
-            <!-- NEW FIELD: BUSINESS NAME -->
+            <!-- BUSINESS NAME -->
             <label>Business Name</label>
             <input type="text" name="businessName" required placeholder="Enter your business name">
 
+            <!-- EMAIL ADDRESS -->
+            <label>Email Address</label>
+            <input type="email" name="email" required placeholder="Enter your email address">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
             <h3>Business Registration</h3>
+
             <label>CIPC Registered?</label>
             <select name="cipc" required>
                 <option value="yes">Yes</option>
@@ -32,6 +40,7 @@
             </select>
 
             <h3>Tax</h3>
+
             <label>Do you have a tax number?</label>
             <select name="taxNumber" required>
                 <option value="yes">Yes</option>
@@ -51,6 +60,7 @@
             </select>
 
             <h3>Employees</h3>
+
             <label>UIF Registered?</label>
             <select name="uif" required>
                 <option value="yes">Yes</option>
@@ -64,6 +74,7 @@
             </select>
 
             <h3>Documents</h3>
+
             <label>BEE Affidavit?</label>
             <select name="bee" required>
                 <option value="yes">Yes</option>
