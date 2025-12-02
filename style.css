@@ -39,8 +39,9 @@ form label {
     color: #004D40;
 }
 
-/* TEXT INPUT */
-input[type="text"] {
+/* INPUTS */
+input[type="text"],
+input[type="email"] {
     width: 100%;
     padding: 12px;
     margin-top: 6px;
